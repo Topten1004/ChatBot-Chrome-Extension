@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "0.0.1",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "logo512.png",
+      "sizes": "128x128"
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Your Extension Name"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "windows"
+  ]
+}
