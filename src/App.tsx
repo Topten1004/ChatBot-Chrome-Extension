@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Main from './components/Main';
+import Login from './components/Login';
 
 function App() {
-
   return (
-    <Main />
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/Main" element={<Main />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/" element={<Navigate to="/Login" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
